@@ -16,7 +16,7 @@ public class GameMinDTO {
 	}
 	
 	public GameMinDTO(Game entity) {
-		super();
+		
 		id = entity.getId();
 		title = entity.getTitle();
 		year = entity.getYear();
@@ -25,7 +25,7 @@ public class GameMinDTO {
 	}
 	
 	public GameMinDTO(GameMinProjection projection) {
-		super();
+	
 		id = projection.getId();
 		title = projection.getTitle();
 		year = projection.getYear();
