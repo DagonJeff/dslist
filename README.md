@@ -30,7 +30,7 @@ dslist/
 │   │   │               └── DslistApplicationTests.java
 │   │   └── resources/
 │   └── Dockerfile
-├── build.gradle
+├── pom.xml
 ├── README.md
 └── [outros arquivos de configuração]
 ```
@@ -52,12 +52,12 @@ dslist/
 
 2. Compile o projeto:
     ```sh
-    ./gradlew build
+    mvn clean install
     ```
 
 3. Execute o projeto:
     ```sh
-    ./gradlew bootRun
+    mvn spring-boot:run
     ```
 
 ### Com Docker
@@ -83,11 +83,9 @@ dslist/
 Para executar os testes, utilize o seguinte comando:
 
 ```sh
-./gradlew test
+mvn test
 ```
 
 Os testes estão localizados em `src/test/java/com/devsuperior/dslist/DslistApplicationTests.java`.
 
-## Contribuição
-
-**Autor:** [DagonJeff](https://github.com/DagonJeff)
+## Autor: [DagonJeff](https://github.com/DagonJeff)
